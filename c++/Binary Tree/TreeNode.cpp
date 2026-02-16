@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-//createing a Node
+//creating a Node
 
 class Node{ //This is a tree node
 public:
@@ -17,13 +17,12 @@ public:
 };
 
 
-void displayTree(Node* root){
+void displayTree(Node* root){ //pre-order
     if(root==NULL) return;
     cout<<root->val<<" ";
     displayTree(root->left);
     displayTree(root->right);
 }
-
 
 
 int main(){
@@ -35,7 +34,7 @@ int main(){
     Node* f = new Node(6);
     Node* g = new Node(7);
 
-    a->left = b;
+    a->left = b; //attaching the created node with their child
     a->right = c;
     b->left = d;
     b->right = e;

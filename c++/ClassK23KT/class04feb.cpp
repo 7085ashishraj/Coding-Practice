@@ -44,7 +44,7 @@ int main(){
     // }
 
     cout<<endl;
-    
+
     // for priniting index 
     for(int i=n-1;i>=0;i--){
         while(st.size()>0 && arr[i] >= arr[st.top()]){
@@ -54,5 +54,4 @@ int main(){
         else nge[i] = st.top();
         st.push(i);
     }
-
 }
