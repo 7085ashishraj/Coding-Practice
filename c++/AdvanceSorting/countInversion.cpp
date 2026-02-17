@@ -16,7 +16,7 @@ int main(){
         }
     }
     cout<<cnt;
-} */
+}*/
 
 //Merge-Sort Approach
 
@@ -75,8 +75,12 @@ void mergeSort(vector<int> &v){
 
 
 int main(){
-    int arr[] = {5,1,3,0,4,9,6};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
     vector<int> v(arr , arr+n);//same as arr,copy
     for(int i=0;i<v.size();i++){
         cout<<v[i]<<" ";
